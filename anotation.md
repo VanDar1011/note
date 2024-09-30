@@ -13,7 +13,9 @@ Có thể chú thích lớp, phương thức, biến, gói, tham số
 Các loại cơ bản như:
 
 > @Deprecated
+
 > @Overide
+
 > @SuppersWarnings
 
 Giúp chỉ dẫn trình biên dịch
