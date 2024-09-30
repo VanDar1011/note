@@ -35,7 +35,9 @@ Không là các chú thích thuần túy, thay đổi cách trình biên dịch 
 @SuppressWarnings: thông báo cho trình biên dịch không in ra câu cảnh báo đó
 
 > ("depracated") : hiển thị khi sử dụng
+
 > ("unchecked") : hiển thị ép kiểu không an toàn
+
 > ("rawtypes") : cảnh báo lỗi trong khai báo kiểu dữ liệu
 
 ## Khai báo Anotation ?
