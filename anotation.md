@@ -16,7 +16,7 @@ Các loại cơ bản như:
 > @Overide
 > @SuppersWarnings
 
-- Giúp chỉ dẫn trình biên dịch
+Giúp chỉ dẫn trình biên dịch
 
 ## Mục đích
 
@@ -29,7 +29,9 @@ Không là các chú thích thuần túy, thay đổi cách trình biên dịch 
 ## Chi tiết
 
 @Overide : khi ghi đè phương thức, trình biên dịch sẽ báo lỗi nếu không ghi đè đúng
+
 @Deprecated: đánh dấu class, field và chỉ dẫn tốt nhất không nên sử dụng nữa
+
 @SuppressWarnings: thông báo cho trình biên dịch không in ra câu cảnh báo đó
 
 > ("depracated") : hiển thị khi sử dụng
@@ -40,4 +42,3 @@ Không là các chú thích thuần túy, thay đổi cách trình biên dịch 
 
 - Có thân hàm
 - Không có thân hàm
-
