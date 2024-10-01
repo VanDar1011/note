@@ -6,8 +6,8 @@
 
 - Định dạng văn bản
 
-* \_\_ hoặc \*\* văn bản để im đậm
-* - hoặc \* văn bản in nghiêng
+* \_\_ hoặc \*\*văn bản để im đậm phải bao quanh
+* - hoặc \*văn bản in nghiêng phải bao quanh
 * [tên liên kết](đường dẫn)
 * ![](đường dãn hình ảnh)
 * > in nghiêng text
