@@ -11,6 +11,7 @@ Thư viện hỗ trợ kết nối java với cơ sở dữ liệu
 > Thực thi câu lệnh sql
 > xem và sủa kết quả trên db
 
+--> Ra ResultSet
 Hình ảnh về cấu trúc JDBC
 ![](https://miro.medium.com/v2/resize:fit:1400/0*KECANDMUAt17hYkU)
 
@@ -24,6 +25,14 @@ ResultSet: Tập kết quả trả về
 SQLException : Lỗi ngoại lệ sql
 
 Khởi tạo một kết nối tới db thông qua driver
+
+## Nhược điểm
+
+Mỗi RDBC có một driver riêng
+Kết quả trả về không phải là Object mà phải conver
+Phải biết trước kiểu dữ liệu đầu ra ( cột tương ứng )
+
+## Code
 
 ```sh
 public static Connection getConnection()

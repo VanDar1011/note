@@ -17,3 +17,7 @@
 ```sh
 code
 ```
+
+CTRL SHIFT O : auto import
+CTRL SHIFT S : BẢNG
+CTRL SHIFT F : Format

@@ -11,9 +11,9 @@ packaging
 
 **war -> web**
 
-_GroupId_ : tên công ty
+_GroupId_ : tên công ty tương tự tên package (use .)
 
-_Artifactid_ : tên của project name
+_Artifactid_ : tên của project name (use -)
 
 Thư mục _main/java_ là chứa code
 
