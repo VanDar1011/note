@@ -385,6 +385,36 @@ String name = (String) getServletContext().getAttribute("name");
 
 - auto refresh Servlet
 
+use SetHeader to autoRefresh
+
 ```sh
 resp.setHeader("Refresh","1");
+```
+
+- welcome file list
+
+> file bắt đầu cho project
+
+chỉnh một vài file mặc định trong web.html
+giống như list gồm index.html, index.htm
+
+- Handle Error
+
+trong web.xml, cấu hình để lấy theo mã lỗi, hoặc lấy theo loại lỗi
+
+```sh
+<error-page>
+	<error-code>404</error-code>
+	<location>/handle-error</location>
+	</error-page>
+```
+
+> hoặc
+
+```sh
+	<error-page>
+		<exception-type>java.io.IOException</exception-type>
+		<location>
+			/handle-error</location>
+	</error-page>
 ```
