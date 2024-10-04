@@ -3,12 +3,38 @@
 ## Servlet là gì ?
 
 - Khái niệm
-  Servlets là một phương thức độc lập trên các nền tảng, dựa trên các thành phần để xây dựng các ứng dụng trên web, mà loại bỏ các hạn chế của các chương trình CGI. Servlets có quyền truy cập tới toàn bộ Java APIs, bao gồm JDBC API.
+  Servlets là một phương thức độc lập trên các nền tảng, dựa trên các thành phần để xây dựng các ứng dụng trên web, mà loại bỏ các hạn chế của các chương trình CGI( giao diện cổng chung ). Servlets có quyền truy cập tới toàn bộ Java APIs, bao gồm JDBC API.
   Java Servlets là các chương trình chạy trên một webserver hoặc một application server và thực hiện như
   **một tầng trung gian**
-  giữa yêu cầu với database
-  Sử dụng Servlets, bạn có thể thu thập **Input** từ người dùng thông qua form, hiển thị bản ghi(record) từ **DB** hoặc nguồn khác, và tạo các trang web động.
-  Hiệu suất tốt : dùng thread cho mỗi request
+  giữa yêu cầu với database từ client
+
+CGI là chương trình phía máy chủ
+
+Hạn chế
+
+Tạo mỗi tiến trình mới
+
+- Tốn tài nguyên do mỗi yêu cầu CGI tạo ra một tiến trình mới.
+
+- Tốc độ có thể chậm hơn so với các công nghệ hiện đại như Servlet hoặc các framework web khác.
+
+- Tạo chương trình cgi mới khi có yêu cầu
+
+| CGI                                                                                            | Servlet                                                 |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------- |
+| The CGI programs are written in native OS.                                                     | Servlet is written in java class & its runs in JVM.     |
+| CGI creates a process base for each request.                                                   | Servlet creates a new thread to process each request.   |
+| The CGI is a language-independent interface that allows a server to start an external process. | The main purpose of servlets is to add                  | up the functionality to a web server. |
+| A CGI program needs to be loaded and started on each CGI request.                              | Servlets stay in the memory while serving the requests. |
+| CGI is not able to read the HTTP servers.                                                      | Servlets are useful to read and set the HTTP servers.   |
+| CGI are plateform dependent.                                                                   | Servlets are plateform independent.                     |
+| Servlets are more secure and useful for Data sharing.                                          | CGI is less secure and is not useful for data sharing.  |
+
+> Thay bằng sự phát triển của Servlet
+
+Sử dụng Servlets, bạn có thể thu thập **Input** từ người dùng thông qua form, hiển thị bản ghi(record) từ **DB** hoặc nguồn khác, và tạo các trang web động.
+
+Hiệu suất tốt : dùng thread cho mỗi request
 
 > Hình ảnh minh họa
 > ![](https://www.vietjack.com/servlets/images/servlet-arch.jpg)
@@ -212,7 +238,7 @@ HttpSession httpSession = req.getSession();
 Object obj = httpSession.getAttribute("name");
 ```
 
-> confiure timeout
+> confiure timeout : thời gian sống của session
 
 ```sh
 <session-config>
