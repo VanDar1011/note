@@ -10,15 +10,19 @@
   Sử dụng Servlets, bạn có thể thu thập **Input** từ người dùng thông qua form, hiển thị bản ghi(record) từ **DB** hoặc nguồn khác, và tạo các trang web động.
   Hiệu suất tốt : dùng thread cho mỗi request
 
-  > Hình ảnh minh họa
-  > ![](https://www.vietjack.com/servlets/images/servlet-arch.jpg)
+> Hình ảnh minh họa
+> ![](https://www.vietjack.com/servlets/images/servlet-arch.jpg)
 
 - Nhiệm vụ của Servlets
 
 Đọc dữ liệu hiển thị( explicit ) được gửi bởi CLient
+
 Đọc dữ liệu yêu cầu HTTP ẩn ( implicit ) được gửi bởi Client bao gồm cookie, media
+
 Xử lí dữ liệu và cho ra kết quả
+
 Gửi dữ liệu hiển thị ( document) tới Client
+
 Gửi phản hồi HTTP ẩn tới Client , thiết lâp cookie, caching
 
 - Package trong Servlets
@@ -29,14 +33,15 @@ Servlets được tạo bởi **javax.servlet** và **javax.servlet.http** là m
 - Vòng đời của servlet
   Bắt đầu bằng phương thức init()
 
-  > chỉ gọi một lần khi servlet được tạo, không gọi lại
-  > khi có yêu cầu , một luồng mới sẽ được tạo ra
+> chỉ gọi một lần khi servlet được tạo, không gọi lại
 
-  Gọi phương thức service() để xử lí một yêu cầu client
+> khi có yêu cầu , một luồng mới sẽ được tạo ra
 
-  > phương thức chính để thực hiện thực sự
+Gọi phương thức service() để xử lí một yêu cầu client
 
-  Bị hủy bởi triệu hồi phương thức destroy()
+> phương thức chính để thực hiện thực sự
+
+Bị hủy bởi triệu hồi phương thức destroy()
 
 > use Annatation
 
