@@ -2,8 +2,9 @@
 
 ## Khái niệm
 
-là các lớp thuần Java được sử dụng để thực hiện các thực thể trong chương trình java
-Cần phải tuân thủ theo các quy tắc
+> @Component
+> là các lớp thuần Java được sử dụng để thực hiện các thực thể trong chương trình java
+> Cần phải tuân thủ theo các quy tắc
 
 - Là một public class
 - Có một hàm khởi tạo không đối số
@@ -37,7 +38,7 @@ private String name;
     public User()
     {
     }
-    
+
     public User(int id, String name)
      {
         this.id = id;

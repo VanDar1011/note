@@ -3,6 +3,7 @@
 M: Model : Class mô phỏng đối tượng trong chương trình
 
 V: View : File.jsp trong chương trình
+
 C: Controller: Các Servlet đóng vài đỏ đẩy request qua RequestDispathcer
 
 Sử dụng forward, dùng file .jsp để tạo web động
