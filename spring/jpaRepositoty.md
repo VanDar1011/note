@@ -21,3 +21,6 @@ void deleteById(ID id): Xóa một thực thể theo ID.
 void delete(T entity): Xóa một thực thể.
 
 void deleteAll(): Xóa tất cả các thực thể.
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
