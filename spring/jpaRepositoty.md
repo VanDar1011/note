@@ -24,3 +24,22 @@ void deleteAll(): Xóa tất cả các thực thể.
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+## Tạo truy vấn dựa trên tên method
+
+findAll/By(And/Or)
+
+## @Query
+
+Tạo câu truy vấn thay vì tên bảng thì ta dùng tên đối tượng Java
+
+```sh
+@Query("SELECT u FROM User u WHERE u.atk = :atk")
+List<User> findUserWithAtk(@Param("atk") int atk);
+```
+
+```sh
+sử dụng sql trực tiếp
+@Query(value ="SELECT u FROM User u WHERE u.atk = :atk",nativeQuery = true)
+List<User> findUserWithAtk(@Param("atk") int atk);
+```

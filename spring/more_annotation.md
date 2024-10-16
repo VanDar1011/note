@@ -79,7 +79,7 @@ Thứ tự ghi đè : _giao diện, siêu lớp, lớp, phương thức giao di�
 
 1. propagation transaction
 
-_REQUIRED ( default ) _: nếu có đã có giao dịch, sử dụng giao dịch đó, nếu không thì tạo mới
+_REQUIRED ( default )_: nếu có đã có giao dịch, sử dụng giao dịch đó, nếu không thì tạo mới
 
 _REQUIRES_NEW_ : bắt buộc tạo mới
 
