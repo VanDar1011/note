@@ -4,6 +4,10 @@ Chuyển đối tượng Java thành JSON (Serialization).
 
 Chuyển JSON thành đối tượng Java (Deserialization).
 
+```sh
+CustomDateSerializer.class) và @JsonDeserialize(using = CustomDateDeserializer.class) trên field expiredDate.
+```
+
 Tùy chỉnh cách serialize và deserialize thông qua annotations.
 
 Chuyển đổi đối tượng thành JSON
@@ -49,4 +53,24 @@ Loại bỏ ra khoiar dữ liệu trả về
 
 ```sh
 @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+```
+
+Chỉ định thứ tự của dữ liệu trả về
+
+```sh
+@JsonPropertyOrder({ "name", "id" })
+```
+
+Bọc một tên wrapper
+
+```sh
+@JsonRootName(value = "root")
+MyBean bean = new MyBean(1, "My bean");
+```
+
+@JsonGetter để chỉ định một phương thức để lấy giá trị cho thuộc tính
+
+```sh
+String result = new ObjectMapper().writeValueAsString(bean);
+// {"id":1,"name":"My bean"}
 ```
