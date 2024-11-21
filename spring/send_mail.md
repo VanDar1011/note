@@ -1,6 +1,6 @@
 # Gửi email
 
-# Thêm thư viện
+## Thêm thư viện
 
 ```sh
 <dependency>
@@ -9,7 +9,7 @@
 </dependency>
 ```
 
-Code mail service : đã test oce
+## ExampleCode : đã test oce
 
 ```sh
 @Service
